@@ -8,6 +8,7 @@ namespace FuturaLib.Models
 {
     public class UserModel
     {
+        //propiedades
         public string RUT { get; set; }
         public string Nombre { get; set; }
         public string Telefono { get; set; }
@@ -15,6 +16,19 @@ namespace FuturaLib.Models
         public string Direccion { get; set; }
         public string Permisos { get; set; }
         public string Contrasenia { get; set; }
+
+        //constructor
+        public UserModel(string rut, string nombre, string telefono, string correo, string direccion,
+            string permisos, string contrasenia)
+        {
+            RUT = rut;
+            Nombre = nombre;
+            Telefono = telefono;
+            Correo = correo;
+            Direccion = direccion;
+            Permisos = permisos;
+            Contrasenia = contrasenia;
+        }
 
     }
 }
